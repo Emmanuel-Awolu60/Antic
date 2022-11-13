@@ -1,0 +1,104 @@
+@media screen and (max-width: 1160px) {
+  .sectiondiv {
+    height: 100ex;
+    color: white;
+  }
+  body {
+    background: whitesmoke;
+  }
+
+  .nav-mobile {
+    display: flex;
+  }
+
+  .disktop-link-holder a {
+    display: block;
+  }
+  .first-section-leftdiv {
+    background: url(./img/header.png);
+    width: 100vw;
+  }
+
+  .text-sectionleftdiv {
+    text-align: center;
+    color: white;
+  }
+
+  .first-headersection h2 {
+    color: white;
+  }
+
+  .first-headersection {
+    display: none;
+  }
+  .text-sectionleftdiv h2 {
+    color: white;
+  }
+
+  .text-sectionleftdiv h3 {
+    color: white;
+  }
+
+  .icon {
+    margin-left: 20vmax;
+    color: white;
+  }
+
+  .first-section-rightdiv {
+    display: none;
+  }
+
+  .aboutus-section {
+    align-items: center;
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .aboutus-leftsectiondiv {
+    width: 100%;
+  }
+
+  .aboutus-text {
+    display: block;
+    padding-left: 50px;
+  }
+
+  .aboutus-section {
+    display: block;
+  }
+
+  .aboutus-card {
+    margin-left: 0px;
+    margin-bottom: 40px;
+    /* justify-content: space-between; */
+  }
+
+  .buttom-section h1 {
+    display: none;
+  }
+
+  .buttom-section nav {
+    display: none;
+  }
+
+  .buttom-section span {
+    display: none;
+  }
+
+  .buttom-section p {
+    margin-left: 90px;
+  }
+
+  .btn {
+    display: block;
+    padding: 10px 60px;
+  }
+
+  .btndiv {
+    padding-left: 90px;
+  }
+
+  .first {
+    display: none;
+  }
+}

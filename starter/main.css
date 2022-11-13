@@ -1,0 +1,307 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.backdrop{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: transparent;
+  display: none;
+  left: 0;
+  top: 0;
+}
+
+.showbackdrop{
+  display: block;
+}
+
+
+.sectiondiv {
+  display: flex;
+  background: white;
+}
+
+.nav-mobile{
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px;
+}
+
+.mobile-text{
+  width: 100px;
+  height: 40px;
+  align-items: center;
+}
+
+.hamburger{
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+
+.menu{
+  height: 3px;
+  width: 100%;
+  background: white;
+  position: relative;
+}
+
+.menu::before{
+  content: '';
+  width: 100%;
+  height: 3px;
+  background: white;
+  position: absolute;
+  transform: translateY(-10px);
+  z-index: 7;
+}
+
+.menu::after{
+  content: '';
+  width: 100%;
+  height: 3px;
+  background: white;
+  position: absolute;
+  transform: translateY(10px);
+  z-index: 7;
+}
+
+.disktop-link-holder{
+  transform: translateX(200%);
+  background: #a52a2a;
+  border: 2px solid blue;
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 70%;
+  transition: all 0.8s ease;
+}
+
+.show-disktop-link-holder{
+  transform: translateX(0);
+}
+
+.active-link{
+  background: whitesmoke;
+  color: #a52a2a !important;
+}
+
+.disktop-link-holder a{
+  color: white;
+  font-size: 30px;
+  margin-top: 50px;
+  padding-left: 10px;
+  list-style: none;
+}
+
+.showburger .menu{
+  background: transparent;
+} 
+
+.showburger .menu::before{
+  transform: translateY(0) rotate(45deg);
+}
+
+.showburger .menu::after{
+  transform: translateY(0) rotate(-45deg);
+}
+
+.first-section-leftdiv {
+  background: whitesmoke;
+  width: 50%;
+  height: 100%;
+}
+
+.first-headersection {
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+#font-icon{
+  font-size: 12px;
+}
+
+.first-headersection h2 {
+  color: #a52a2a;
+  padding: 0px 100px 0 0px;
+}
+
+.first-headersection a {
+  padding-left: 25px;
+  color: #a52a2a;
+}
+
+.text-sectionleftdiv {
+  margin-top: 150px !important;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  margin-bottom: 70px;
+}
+
+.top {
+  font-size: small;
+  color: brown;
+  margin-bottom: 50px;
+}
+
+.text-sectionleftdiv h2 {
+  font-size: 40px;
+  color: brown;
+  margin-bottom: 20px;
+  line-height: 40px;
+}
+
+.text-sectionleftdiv p {
+  line-height: 20px;
+}
+
+.first-section-rightdiv {
+  width: 50%;
+  background: url(./img/header.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.icon {
+  margin-top: 30px;
+  border: 2px solid;
+  color: brown;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.chat-holder {
+  color: white;
+  height: 35px;
+  width: 35px;
+  border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-left: 85%;
+  margin-top: 10px;
+}
+
+.chat-holder:hover {
+  background: rgb(83, 80, 80);
+}
+
+.aboutus-section {
+  background: whitesmoke;
+  display: flex;
+ 
+}
+
+.aboutus-leftsectiondiv {
+  width: 50%;
+}
+
+.aboutus-card{
+  margin-left: 50px;
+}
+
+.aboutus-leftsectiondiv h2 {
+  font-size: 50px;
+  margin-top: 70px;
+  margin-left: 50px;
+  
+}
+
+.aboutus-leftsectiondiv p {
+  font-size: 20px;
+  margin-top: 15px;
+  margin-left: 50px;
+  color: #a52a2a;
+}
+
+.aboutus-rightdiv {
+  display: block;
+  height: 100%;
+  width: 50%;
+  justify-content: space-between;
+}
+
+.aboutus-text {
+  display: flex;
+  height: 50%;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.aboutus-text h2 {
+  color: #a52a2a;
+  margin-bottom: 10px;
+}
+
+.aboutus-text p {
+  color: rgb(110, 100, 100);
+}
+
+.buttom-sectiondiv {
+  margin-top: 50px;
+}
+
+.buttom-section {
+  width: 96%;
+  margin: 0 auto;
+}
+
+.buttom-section h1 {
+  margin-bottom: 15px;
+}
+
+.buttom-section p {
+  color: rgb(110, 100, 100);
+  display: inline;
+  margin-right: 300px;
+}
+
+.buttom-section span {
+  font-size: 20px;
+  display: block;
+  color: #a52a2a;
+}
+
+.buttom-section nav{
+  color: rgb(110, 100, 100);
+  display: inline;
+  margin-right: 300px;
+}
+
+.btn {
+  display: flex;
+  background: rgb(110, 100, 100);
+  padding: 10px 25px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+}
